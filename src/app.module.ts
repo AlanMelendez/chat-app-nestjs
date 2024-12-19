@@ -25,12 +25,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       autoLoadEntities: true,
       synchronize: process.env.NODE_ENV === 'development', // Solo sincroniza en desarrollo
     }),
-    
-    
-    
-    UsuariosModule, MesasModule, MensajesModule, WebsocketModule],
-  controllers: [AppController],
-  providers: [AppService],
+    UsuariosModule,
+    MesasModule,
+    MensajesModule,
+    WebsocketModule],
+  // controllers: [AppController],
+  // providers: [AppService],
   
 })
 export class AppModule {}
