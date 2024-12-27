@@ -1,7 +1,4 @@
-/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { UsuariosModule } from './usuarios/usuarios.module';
 import { MesasModule } from './mesas/mesas.module';
 import { MensajesModule } from './mensajes/mensajes.module';
@@ -29,8 +26,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     MesasModule,
     MensajesModule,
     WebsocketModule],
-  // controllers: [AppController],
-  // providers: [AppService],
+  providers: [],
   
 })
 export class AppModule {}
